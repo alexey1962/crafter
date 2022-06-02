@@ -37,7 +37,7 @@
             this.cell1 = new System.Windows.Forms.Button();
             this.cell2 = new System.Windows.Forms.Button();
             this.cell3 = new System.Windows.Forms.Button();
-            this.result = new System.Windows.Forms.Button();
+            this.cellresult = new System.Windows.Forms.Button();
             this.itemsWrapper = new System.Windows.Forms.FlowLayoutPanel();
             this.crafter = new System.Windows.Forms.Panel();
             this.crafter.SuspendLayout();
@@ -142,16 +142,16 @@
             this.cell3.TabIndex = 0;
             this.cell3.UseVisualStyleBackColor = false;
             // 
-            // result
+            // cellresult
             // 
-            this.result.BackColor = System.Drawing.Color.Transparent;
-            this.result.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.result.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.result.Location = new System.Drawing.Point(165, 35);
-            this.result.Name = "result";
-            this.result.Size = new System.Drawing.Size(64, 64);
-            this.result.TabIndex = 0;
-            this.result.UseVisualStyleBackColor = false;
+            this.cellresult.BackColor = System.Drawing.Color.Transparent;
+            this.cellresult.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.cellresult.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cellresult.Location = new System.Drawing.Point(165, 35);
+            this.cellresult.Name = "cellresult";
+            this.cellresult.Size = new System.Drawing.Size(64, 64);
+            this.cellresult.TabIndex = 0;
+            this.cellresult.UseVisualStyleBackColor = false;
             // 
             // itemsWrapper
             // 
@@ -168,7 +168,7 @@
             this.crafter.AutoSize = true;
             this.crafter.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.crafter.Controls.Add(this.cell7);
-            this.crafter.Controls.Add(this.result);
+            this.crafter.Controls.Add(this.cellresult);
             this.crafter.Controls.Add(this.cell3);
             this.crafter.Controls.Add(this.cell2);
             this.crafter.Controls.Add(this.cell1);
@@ -212,7 +212,7 @@
         private System.Windows.Forms.Button cell1;
         private System.Windows.Forms.Button cell2;
         private System.Windows.Forms.Button cell3;
-        private System.Windows.Forms.Button result;
+        private System.Windows.Forms.Button cellresult;
         private System.Windows.Forms.FlowLayoutPanel itemsWrapper;
         private System.Windows.Forms.Panel crafter;
     }

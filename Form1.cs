@@ -13,18 +13,24 @@ namespace crafter
     
     public partial class Form1 : Form
     {
-        private static itemRecipe[] candleRecipe = {
-            new itemRecipe { cell = 1, image = "carrot" },
-            new itemRecipe { cell = 2, image = "candle" }
+        private static itemRecipe[] diamond_swordRecipe = {
+            new itemRecipe { cell = "2", image = "stick" },
+            new itemRecipe { cell = "5", image = "diamond" },
+            new itemRecipe { cell = "8", image = "diamond" },
+            new itemRecipe { cell = "result", image = "stick"}
         };
-        private static itemRecipe[] brickRecipe = {
-            new itemRecipe { cell = 5, image = "book" },
-            new itemRecipe { cell = 7, image = "lead" }
+        private static itemRecipe[] diamond_pickaxeRecipe = {
+            new itemRecipe { cell = "2", image = "stick" },
+            new itemRecipe { cell = "5", image = "stick" },
+            new itemRecipe { cell = "7", image = "diamond" },
+            new itemRecipe { cell = "8", image = "diamond" },
+            new itemRecipe { cell = "9", image = "diamond" },
+            new itemRecipe {cell = "result", image = "stick"}
         };
         private CrafterConfig[] crafterConfigs =
         {
-            new CrafterConfig {title = "candle", recipe = candleRecipe },
-            new CrafterConfig {title = "brick", recipe = brickRecipe },
+            new CrafterConfig {title = "diamond_sword", recipe = diamond_swordRecipe },
+            new CrafterConfig {title = "diamond_pickaxe", recipe = diamond_pickaxeRecipe },
         };
         public Form1()
         {
@@ -64,7 +70,7 @@ namespace crafter
             {
                 crafter.Controls["cell" + i].BackgroundImage = null;
             }
-            result.BackgroundImage = null;
+            cellresult.BackgroundImage = null;
         }
 
         private void updateCraftingGrid(itemRecipe[] config)
@@ -82,7 +88,7 @@ namespace crafter
     }
 
     public struct itemRecipe {
-        public int cell;
+        public string cell;
         public string image;
     }
 }
